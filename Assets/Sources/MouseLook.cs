@@ -8,13 +8,20 @@ public class MouseLook : MonoBehaviour
     float rotationX = 0f;
     float rotationY = 0f;
 
+    PlayerState playerState = null;
+
     void Start () 
     {
-        	
+        playerState = GameObject.Find("Player").GetComponent<PlayerState>();
 	}
 	
 	void Update () 
     {
+        if(playerState.dead)
+        {
+            return;
+        }
+
         float dirX = Input.GetAxis("Mouse X");
         float dirY = Input.GetAxis("Mouse Y");
 
