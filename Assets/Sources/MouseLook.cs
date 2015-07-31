@@ -4,6 +4,7 @@ using System.Collections;
 public class MouseLook : MonoBehaviour 
 {
     public float sensitivity = 500f;
+    public CNJoystick joystick = null;
 
     float rotationX = 0f;
     float rotationY = 0f;
@@ -22,8 +23,14 @@ public class MouseLook : MonoBehaviour
             return;
         }
 
+#if UNITY_ANDROID
+        float dirX = joystick.GetAxis("Horizontal");
+        float dirY = joystick.GetAxis("Vertical");
+#else
+        joystick.SetActive(false);
         float dirX = Input.GetAxis("Mouse X");
         float dirY = Input.GetAxis("Mouse Y");
+#endif
 
         rotationX += -dirY * sensitivity * Time.deltaTime;
         rotationY += dirX * sensitivity * Time.deltaTime;

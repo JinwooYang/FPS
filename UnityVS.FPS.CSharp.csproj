@@ -67,6 +67,12 @@
   <ItemGroup>
     <Compile Include="Assets\BookPartciel\Script\AutoDestroryParticle.cs" />
     <Compile Include="Assets\BookPartciel\Script\AutoLightOff.cs" />
+    <Compile Include="Assets\CNControls\NotImportant\Controller Examples\CameraFollowExample.cs" />
+    <Compile Include="Assets\CNControls\NotImportant\Controller Examples\Controller3DExample.cs" />
+    <Compile Include="Assets\CNControls\Scripts\CNAbstractController.cs" />
+    <Compile Include="Assets\CNControls\Scripts\CNJoystick.cs" />
+    <Compile Include="Assets\CNControls\Scripts\CNThrowableTouchpad.cs" />
+    <Compile Include="Assets\CNControls\Scripts\CNTouchpad.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -212,6 +218,7 @@
     <Compile Include="Assets\Sources\Ball.cs" />
     <Compile Include="Assets\Sources\CharacterMove.cs" />
     <Compile Include="Assets\Sources\FireManager.cs" />
+    <Compile Include="Assets\Sources\FollowCam.cs" />
     <Compile Include="Assets\Sources\MonsterManager.cs" />
     <Compile Include="Assets\Sources\MouseLook.cs" />
     <Compile Include="Assets\Sources\PlayerState.cs" />

@@ -119,6 +119,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CNControls\Editor\CNAbstractControllerInspector.cs" />
+    <Compile Include="Assets\CNControls\Editor\CNInputEditorTools.cs" />
+    <Compile Include="Assets\CNControls\Editor\CNJoystickCreatorMenu.cs" />
+    <Compile Include="Assets\CNControls\Editor\CNJoystickInspector.cs" />
+    <Compile Include="Assets\CNControls\Editor\CNThrowableTouchpadCreatorMenu.cs" />
+    <Compile Include="Assets\CNControls\Editor\CNThrowableTouchpadInspector.cs" />
+    <Compile Include="Assets\CNControls\Editor\CNTouchpadCreatorMenu.cs" />
+    <Compile Include="Assets\CNControls\Editor\CNTouchpadInspector.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\ActiveAnimationEditor.cs" />

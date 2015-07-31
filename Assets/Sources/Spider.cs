@@ -50,6 +50,7 @@ public class Spider : MonoBehaviour
             ani.Play("Run");
             Vector3 dir = player.transform.position - this.transform.position;
             dir.Normalize();
+            dir.y = 0f;
 
             this.transform.position += dir * 5f * Time.deltaTime;
 
